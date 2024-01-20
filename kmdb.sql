@@ -138,6 +138,27 @@ CREATE TABLE characters (
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
 
+-- Inserting movies table data
+INSERT INTO movies (title, year, mpaa_rating, studio_id) 
+VALUES ("Batman Begins", 2005, "PG-13",1);
+
+INSERT INTO movies (title, year, mpaa_rating, studio_id) 
+VALUES ("The Dark Knight", 2008, "PG-13",1);
+
+INSERT INTO movies (title, year, mpaa_rating, studio_id) 
+VALUES ("The Dark Knight Rises", 2012, "PG-13",1);
+
+SELECT * FROM movies;
+
+-- Inserting studios table data
+
+INSERT INTO studios (name) 
+VALUES ("Warner Bros.");
+
+-- Inserting movies table data
+
+
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
