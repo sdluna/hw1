@@ -244,7 +244,6 @@ VALUES ("Selina Kyle", 11, 3);
 SELECT title, year, mpaa_rating, name 
 FROM movies INNER JOIN studios ON studio_id;
 
-
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -254,3 +253,6 @@ FROM movies INNER JOIN studios ON studio_id;
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT movies.title, actors.name, characters.character_name 
+FROM movies INNER JOIN characters ON movies.id = characters.movie_id
+INNER JOIN actors ON characters.actor_id = actors.id;
