@@ -148,8 +148,6 @@ VALUES ("The Dark Knight", 2008, "PG-13",1);
 INSERT INTO movies (title, year, mpaa_rating, studio_id) 
 VALUES ("The Dark Knight Rises", 2012, "PG-13",1);
 
-SELECT * FROM movies;
-
 -- Inserting studios table data
 INSERT INTO studios (name) 
 VALUES ("Warner Bros.");
@@ -188,8 +186,6 @@ VALUES ("Joseph Gordon-Levitt");
 
 INSERT INTO actors (name) 
 VALUES ("Anne Hathaway");
-
-SELECT * FROM actors;
 
 -- Inserting characters table data
 
@@ -238,8 +234,6 @@ VALUES ("John Blake", 10, 3);
 INSERT INTO characters (character_name, actor_id, movie_id) 
 VALUES ("Selina Kyle", 11, 3);
 
-SELECT * FROM characters; 
-
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
@@ -247,6 +241,9 @@ SELECT * FROM characters;
 
 -- The SQL statement for the movies output
 -- TODO!
+SELECT title, year, mpaa_rating, name 
+FROM movies INNER JOIN studios ON studio_id;
+
 
 -- Prints a header for the cast output
 .print ""
