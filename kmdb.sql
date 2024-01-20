@@ -148,14 +148,47 @@ VALUES ("The Dark Knight", 2008, "PG-13",1);
 INSERT INTO movies (title, year, mpaa_rating, studio_id) 
 VALUES ("The Dark Knight Rises", 2012, "PG-13",1);
 
-SELECT * FROM movies;
-
 -- Inserting studios table data
-
 INSERT INTO studios (name) 
 VALUES ("Warner Bros.");
 
--- Inserting movies table data
+-- Inserting actors table data
+
+INSERT INTO actors (name) 
+VALUES ("Christian Bale");
+
+INSERT INTO actors (name) 
+VALUES ("Michael Caine");
+
+INSERT INTO actors (name) 
+VALUES ("Liam Neeson");
+
+INSERT INTO actors (name) 
+VALUES ("Katie Holmes");
+
+INSERT INTO actors (name) 
+VALUES ("Gary Oldman");
+
+INSERT INTO actors (name) 
+VALUES ("Heath Ledger");
+
+INSERT INTO actors (name) 
+VALUES ("Aaron Eckhart");
+
+INSERT INTO actors (name) 
+VALUES ("Maggie Gyllenhaal");
+
+INSERT INTO actors (name) 
+VALUES ("Tom Hardy");
+
+INSERT INTO actors (name) 
+VALUES ("Joseph Gordon-Levitt");
+
+INSERT INTO actors (name) 
+VALUES ("Anne Hathaway");
+
+SELECT * FROM actors;
+-- Inserting characters table data
 
 
 
